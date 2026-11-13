@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head Settings and the title of the page, as well as links to the css files -->
+<head>
+ 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Supernatural</title>
+     <link rel="stylesheet"  href="css/style.css">
+    <link rel = "stylesheet"  href="css/navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    	
+</head>
+
+<body>
+    
+  <!-- Header that contains the logo and the horizontal navigation bar-->
+    <header>
+        <div class="logo">Supernatural</div>
+    
+    
+   
+    <div class = "topnav" id = "myTopnav">
+            <a href= "index.html">Home</a>&nbsp;
+            <a href= "about.html">About</a>&nbsp;
+            <a href= "map.html">Map</a>&nbsp;
+            <a href= "characters.html">Characters</a>&nbsp;
+            <a href= "monsters.html">Monsters</a>&nbsp;
+            <a href= "seasons.html">Seasons</a>&nbsp;
+            <a href= "shop.html">Shop</a>&nbsp;
+            <a href= "contact.html">Contact</a>&nbsp;
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+    </div>
+</header>
+    
+<!-- Main section with a flex layout -->
+<main>
+    <!-- Text on the left, and picture on the right -->
+    <section class="intro">
+        <div class="intro_text">
+          <h1>Welcome to the World of Supernatural!</h1>
+          <h2>"Saving people. Hunting things. Family business.</h2>&nbsp;
+          <h3>Follow the journey of two brothers that started with the search of a father...</h3>
+        </div>
+        <div class="intro_image">
+        <img src="img/supernatural.jpg" alt="Supernatural's logo">
+        </div>
+    </section>
+      <!-- Cards for separate sections of the website with short description and links -->
+      <section class="cards">
+        <div class="card">
+          <h3>Characters</h3>
+          <p>Get to know the heroes who protect the world.</p>
+          <a href="characters.html">Meet Characters →</a>
+        </div>
+        <div class="card">
+          <h3>The Monsters</h3>
+          <p>Familiarize yourself with the dangers in the dark.</p>
+          <a href="monsters.html">Uncover Mysteries →</a>
+        </div>
+        <div class="card">
+          <h3>Seasons</h3>
+          <p>Learn about the Road So Far, and dive into the history of two brothers</p>
+          <a href="seasons.html">Explore Seasons →</a>
+        </div>
+      </section>
+      <!-- External Link -->
+      <h2><a href="https://supernatural.fandom.com/wiki/Supernatural_Wiki">Fandom</a></h2>&nbsp;
+
+      <section class="cards">
+        <div class="card">
+            <h3>Learn about Us</h3>
+            <p>Learn our purpose and where to find us.</p>
+            <a href="about.html">Greetings →</a>
+        </div>
+        <div class="card">
+          <h3>New Merchandise</h3>
+          <p>Check out the available items, approved by the Winchester brothers</p>
+          <a href="shop.html">Shop Online →</a>
+        </div>
+      </section>
+
+
+
+</main>
+<!-- Footer with vertical navigation bars and links to other pagse of teh website as well as social media buttons -->
+<footer>
+ <div class="footer-column">
+      <h4>Main Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="map.html">Map</a>
+    </div>
+    <div class="footer-column">
+      <h4>Explore</h4>
+      <a href="characters.html">Characters</a>
+      <a href="monsters.html">Monsters</a>
+      <a href="seasons.html">Seasons</a>
+    </div>
+    <div class="footer-column">
+      <h4>Connect</h4>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.facebook.com/Supernatural/" class="fa fa-facebook"></a>
+      <a href="https://x.com/SuperWiki" class="fa fa-twitter"></a>
+      
+    </div>
+    <p class="copyright">&#169 2025 The World of Supernatral. All rights reserved.</p>
+  </footer>
+    
+  <!-- Javascript for functionality of the navigation bars -->
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+    
+    
+    <!-- End of the body and html file -->
+</body>
+</html>

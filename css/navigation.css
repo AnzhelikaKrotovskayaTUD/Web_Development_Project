@@ -1,0 +1,63 @@
+/* Navigation Bar Styling */
+.topnav {
+    background-color: #1f1f1f; /* Dark background for nav bar */
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+/* Style for navigation links */
+.topnav a {
+    float: left; /* Align links horizontally */
+    display: block;
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Hover effect for nav links */
+.topnav a:hover {
+    background-color: #c0392b; /* Blood Red background*/
+    color: #ffffff; /* White text*/
+}
+
+/* Active link styling */
+.topnav a.active {
+    background-color: #e74c3c; /* Bright Red for active page*/
+    color: #ffffff; /* White */
+}
+
+/* Menu icon (hamburger) hidden on desktop */
+.topnav .icon {
+    display: none;
+} 
+
+/* Mobile navigation: hide all but the first link, show icon */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block; /* Show icon on small screens */
+    }
+    }
+
+  /* Responsive menu: stack links vertically and position icon */
+    @media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;  /* Stack links */
+        text-align: left; /* Align text to the left */
+    }
+} 

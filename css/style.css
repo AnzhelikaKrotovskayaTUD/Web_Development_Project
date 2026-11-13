@@ -1,0 +1,297 @@
+/*Universal selector, gets rid of all the default-browser settings, like uexpected margins or pagging and box model behaviour*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+/* General Body and Setup */
+  body {
+    background-color: rgb(57, 54, 54);
+    color: #1a1a1a;
+    font-family: 'Poppins', sans-serif;
+  }
+
+/* Header layout and style */
+  header {
+    background-color: #000000;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #8B0000;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Navigation links in header */
+  nav a {
+    color: rgb(117, 111, 111);
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  nav a:hover {
+    color: #ff4c4c; /* Bright Red on hover */
+  }
+  
+  /*Main content of the Page*/
+  main {
+    background-color: #352020; /* Light, readable main content background */
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 12px rgba(58, 17, 17, 0.2);
+    }
+  
+    section {
+        margin-bottom: 3rem;
+      }
+  
+  /* Intro section layout */
+  .intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .intro_text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .intro_text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .intro_text h3 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color:silver; /* Lighter subtitle */
+  }
+  
+  .intro_image img {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  }
+  
+  .intro_image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  /* Cards Section (Characters, Monsters, Seasons) */
+  .cards{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: grey;
+    color: #1a1a1a;
+    flex: 1;
+    padding: 1.5rem;
+    border-radius: 10px;
+    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .card h3, .card h4 {
+    margin-bottom: 0.5rem; /* or 10px */
+    color: #8B0000;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  }
+
+  .card a {
+    color: #8B0000;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  .card a:hover {
+    text-decoration: underline;
+    color: #ff4c4c;
+  }
+
+  /* Layout for images from different sections */
+  .characters img{
+    width:25%;
+    height:50%;
+  }
+
+  .character img {
+    width:35%;
+    height:50%;
+
+  }
+
+  .merch-item img {
+    width: 35%;
+    height: 50%;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1a1a1a;
+    color: #f3f3f3;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: space-between;
+    border-top: 5px solid #b22020;
+
+  }
+  
+  .footer-column {
+    min-width: 200px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column a {
+    display: block;
+    text-decoration: none;
+    color: #b22020;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .footer-column a:hover {
+    color: #fff; 
+  }
+  
+  footer p {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
+
+
+
+
+
+/* Fixing Unintended Style Inheritance */
+div:not(.topnav) {
+    color: #f0f0f0; /*To match body text */
+    font-family: 'Poppins', sans-serif;
+    text-indent: 0; /* Removed indent */
+  }
+
+/*Social Media buttons*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  /* Headings */
+  h1, h2, h3 {
+    color: #b22020;
+  }
+  
+  /* Paragraph text */
+  p {
+    color: silver;
+  }
+
+  /* Regular images */
+  img {
+    width: 50%;
+    height: 25%;
+  }
+
+  /* Layout for links, hovered, active, and visited */
+  a {
+    text-decoration: none;
+    color: #b22020;
+  }
+
+  a:hover {
+    color: #555 !important;
+    /* text-shadow: none !important; */
+  }
+  
+  a:active{
+    color: gold !important;
+  }
+
+  a:visited {
+    color:white;
+    /* text-shadow: 1px 1px white; */
+  }
+
+  /* Navigation lists */
+nav ul {
+    padding: 0;
+    margin: 0;
+
+}
+
+nav li{
+    color: silver;
+}
+
+/* Navigation links */
+nav a {
+    text-decoration: none;
+    color: silver;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+    color:darkred;
+  }
+
+  nav a:active{
+    color: gold;
+  }
+
+  /* Indent the nested <ol> under Characters */
+  nav li > ol {
+    margin-left: 20px; /* or padding-left */
+    list-style-type: decimal; /* keep the numbers */
+  }
